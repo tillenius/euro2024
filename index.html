@@ -14,7 +14,7 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
 function Game(dateandtime, home, away, homegoal, awaygoal, id, homeflag, awayflag, matchnum) {
-  this.dateandtime=new Date(dateandtime).toLocaleString() 
+  this.dateandtime=new Date(dateandtime).toLocaleString().slice(0, -3)
   this.home=home;
   this.away=away;
   this.homegoal=homegoal;
