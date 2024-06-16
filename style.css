@@ -1,0 +1,114 @@
+body {
+  background-image: url("bg.jpg");
+  color: black;
+}
+h1 {
+   color: white;
+   font-family: verdana;
+   font-size: 35px;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 10px;
+}
+input {
+  font: 12px sans-serif;
+}
+TD {
+  font: 12px sans-serif;
+  border: solid black 1px;
+  padding: 2px 10px 2px 10px;
+}
+TD.gamehead {
+  font-weight: bold;
+  vertical-align: bottom;
+  white-space: nowrap;
+  text-align: center;
+  background: #EEEEEE;
+}
+TD.standlist {
+  font-size: 16px;
+  white-space: nowrap;
+  background: #EEEEEE;
+}
+TD.standlistscore {
+  font-size: 16px;
+  white-space: nowrap;
+  background: #EEEEAA;
+  text-align: right;
+}
+TD.betscore {
+  white-space: nowrap;
+  text-align: center;
+  background: #EEEEAA;
+}
+TD.header {
+  text-align: center;
+  background: #EEEEAA;
+}
+TD.points {
+  text-align: center;
+  background: #EEEEEE;
+}
+TD.gamelistodd {
+  white-space: nowrap;
+  background: #EEEEEE;
+  vertical-align: middle;
+}
+TD.gamelisteven {
+  white-space: nowrap;
+  background: #EEEEAA;
+}
+TD.emptygame {
+  background: white;
+  border: none;
+}
+TD.emptyscore {
+  background: white;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+TD.info {
+  background: white;
+  border: none;
+  font: 12px sans-serif;
+}
+
+#columns {
+  display: grid;
+  grid-template-columns: 1fr 920px 1fr;
+  grid-template-rows: auto;
+}
+
+#left {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: right;
+}
+#middle {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: center;
+}
+#right {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+#toplist {
+  text-align: left;
+  padding: 0px 0px 10px 0px;
+}
+#maintable {
+  margin: 0 auto;
+  padding: 10px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+#columns {
+  display: block;
+}
+table {
+  margin: 0 auto;
+}
+#left {}
+#middle {}
+#right {}
+}
